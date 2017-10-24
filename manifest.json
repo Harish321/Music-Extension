@@ -1,29 +1,16 @@
 {
 "manifest_version" : 2,
-"name": "webstore",
+"name": "Music",
 "version": "1.0",
 "description":"A Store for Google Chrome",
 "icons": {
-    "128":"Icon/icon128.png",
-    "48":"ICon/icon48.png",
-    "16":"Icon/icon16.png"
+    "128":"icons/icon128.png",
+    "48":"icons/icon48.png",
+    "16":"icons/icon16.png"
 
 },
 "browser_action":{
-    "default_icon":"Icon/icon16.png",
+    "default_icon":"icons/icon16.png",
     "default_popup":"popup.html"
-},
-"content_scripts":[
-    {
-        "matches":["https://*/*","http://*/*"],
-        "js":["jquery-3.2.1.js","jquery-ui.js","jquery-ui.min.js","popup.js","myscript.js"],
-        "css":["style.css","style2.css"]
-    }
-],
-"web_accessible_resources":[
-    "toolbar.html",
-    "script.js",
-    "style.css",
-    "style2.css"
-]
+}
 }
