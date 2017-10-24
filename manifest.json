@@ -15,7 +15,7 @@
 "content_scripts":[
     {
         "matches":["https://*/*","http://*/*"],
-        "js":["jquery-3.2.1.js","jquery-ui.js","jquery-ui.min.js","popup.js","myscript.js","script.js"],
+        "js":["jquery-3.2.1.js","jquery-ui.js","jquery-ui.min.js","popup.js","myscript.js"],
         "css":["style.css","style2.css"]
     }
 ],
