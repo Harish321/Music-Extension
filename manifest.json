@@ -1,4 +1,5 @@
-"manifest_version": 2,
+{
+"manifest_version" : 2,
 "name": "webstore",
 "version": "1.0",
 "description":"A Store for Google Chrome",
@@ -25,3 +26,4 @@
     "style.css",
     "style2.css"
 ]
+}
