@@ -2,7 +2,7 @@
 "manifest_version" : 2,
 "name": "Music",
 "version": "1.0",
-"description":"A Store for Google Chrome",
+"description":"Music player",
 "icons": {
     "128":"icons/icon128.png",
     "48":"icons/icon48.png",
@@ -12,5 +12,20 @@
 "browser_action":{
     "default_icon":"icons/icon16.png",
     "default_popup":"popup.html"
-}
+},
+"content_scripts":[
+    {
+        "matches":["https://*/*","http://*/*"],
+        "js":["js/jquery/jquery-3.2.1.js","js/jquery/jquery-ui.js","js/jquery/jquery-ui.min.js","js/index.js","iframe.js"],
+        "css":["css/style.css"]
+    }
+],
+
+"web_accessible_resources":[
+    "iframe.js",
+    "source.html",
+    "popup.html", 
+    "css/style.css",
+    "js/index.js"
+]
 }
